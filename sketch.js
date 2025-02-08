@@ -127,7 +127,7 @@ function mouseDragged() {
     
     // only rotating this by the y axis
     let delta = clickedMouseY - mouseY;
-    rotation += delta * 0.5;
+    rotation += delta * 0.05;
     clickedMouseY = mouseY;
   }
 }
