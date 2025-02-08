@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+h4 {
+    font-size: 25px;
+}
+.main-container {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flex-container label {
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input [readonly], input[disabled] {
+  cursor: not-allowed;
+  user-select: none;
+}

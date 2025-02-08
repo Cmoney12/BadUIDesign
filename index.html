@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>Phone Number Entry</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <h4>Phone Number Entry</h4>
+        
+        <div class="flex-container">
+          <label>Area Code:</label>
+          <input type="text" id="area-code" value="" placeholder="123" disabled>
+          <button type="button" id="area-backspace">backspace</button>
+          <input type="radio" id="area-radio" name="phone">
+        </div>
+        
+        <div class="flex-container">
+          <label>Prefix:</label>
+          <input type="text" id="prefix" placeholder="456" disabled>
+          <button type="button" id="prefix-backspace">backspace</button>
+          <input type="radio" id="prefix-radio" name="phone">
+        </div>
+        
+        <div class="flex-container">
+          <label>Line Number:</label>
+          <input type="text" id="line-number" placeholder="7890" disabled>
+          <button type="button" id="line-backspace">backspace</button>
+          <input type="radio" id="line-radio" name="phone">
+        </div>
+        
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
