@@ -200,5 +200,23 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("line-backspace").addEventListener("click", function () {
     backspaceInput("line-number");
   });
+  
+  document.getElementById("submit-button").addEventListener("click", function () {
+    let areaCodeField = document.getElementById("area-code");
+    let prefixField = document.getElementById("prefix");
+    let lineNumField = document.getElementById("line-number");
+    
+    let submitDiv = document.getElementById("submit-message");
+
+    if (areaCodeField.value.length === 3 && prefixField.value.length === 3 &&
+        lineNumField.value.length === 4) {
+      submitDiv.innerHTML = "<p>Successfully submitted number</p>";
+    } else {
+      submitDiv.innerHTML = "<p>Error submitting number</p>";
+    }
+    
+  });
+  
 });
+
 
